@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser thousands of Dashboard </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=mona-sans@400,500,700&display=swap" rel="stylesheet">
+
+</head>
+<body id="demo">
+    <div class="container">
+
+        <div class="nav-bar">
+
+            <header>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <nav class="sidebar">
+                    <ul>
+                        <li><a href="#">
+                            <div class="explore">
+                                <div class="explore-content">
+                                    <p>Explore</p>
+                                    <div class="explore-icon"><img src="img/downarrow1.png" alt=""></div>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <div class="explore-dd">
+                                       
+                                        <div class="pop-style" id="pop-font">
+                                            <div class="pop-img"><img src="img/popular.png" alt=""></div>
+                                            <div class="popular-name"><a href="#">Popular</a></div>
+                                        </div>
+                                        <div class="pop-style"  id="new-font"> 
+                                            <div class="pop-img"><img src="img/newandnewworthy.png" alt=""></div>
+                                            <div class="popular-name"><a href="#">New and Noteworthy</a></div>
+                                        </div>
+                                       
+                                        <div class="pop-style"><a href="#" data-teamname="Product Design" id="pd"><p>Product Design</p></a></div>
+                                            <div class="pop-style"><a href="#" data-teamname="Web Design" class="anchor"  id="pd"><p>Web Design</p></a></div>
+                                            <div class="pop-style"><a href="#" data-teamname="Animation"  id="pd"><p>Animation</p></a></div>
+                                            <div class="pop-style"><a href="#" data-teamname="Branding"  id="pd"><p>Branding</p></a></div>
+                                            <div class="pop-style"><a href="#" data-teamname="Illustration"  id="pd"><p>Illustration</p></a></div>
+                                            <div class="pop-style"><a href="#" data-teamname="Mobile"  id="pd"><p>Mobile</p></a></div>
+                                            <div class="pop-style"><a href="#" data-teamname="Typography"  id="pd"><p>Typography</p></a></div>
+                                            <div class="pop-style"><a href="#" data-teamname="Print"  id="pd"><p>Print</p></a></div>
+            
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="explore">
+                                <div class="explore-content"><p>Hire a Designer</p></div>
+                                <div class="explore-icon"><img src="img/downarrow1.png" alt=""></div>
+                                <div class="dropdown-menu">
+                                    <div class="explore-dd">
+                                        <div class="pop-style" id="pop-font">
+                                            <div class="pop-img"><img src="img/hiresearch.png" alt=""></div>
+                                            <div class="popular-name"><a href="#">Browse Designers</a></div>
+                                        </div>
+                                        <div class="pop-style"  id="new-font"> 
+                                            <div class="pop-img"><img src="img/submitabrief.png" alt=""></div>
+                                            <div class="popular-name"><a href="#">Submit a Project Brief</a></div>
+                                        </div>
+                                        <div class="pop-style"  id="new-font"> 
+                                            <div class="pop-img"><img src="img/postjob.png" alt=""></div>
+                                            <div class="popular-name"><a href="#">Post a Job</a></div>
+                                        </div>
+                                        <div class="pop-style"  id="new-font"> 
+                                            <div class="pop-img"><img src="img/hiringdribble.png" alt=""></div>
+                                            <div class="popular-name"><a href="#">Hiring on Dribble</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="explore">
+                                <div class="explore-content"><p>Find Jobs</p></div>
+                                
+                            </div>
+                        </a></li>
+                        <li><a href="#"> <div class="explore">
+                            <div class="explore-content"><p>Blog</p></div>
+                            
+                        </div></a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+
+            <div class="logo"><a href="#"><img src="img/dribble.png" alt="Dribble loo"></a></div>
+            <div class="search-bar">
+              <div class="search-input">
+                <input type="text" id="search" placeholder="What are you looking for?" class="search-bar-icon"> 
+              </div>
+              <div class="shots">
+                <div class="shot-name"><p>Shots</p></div>
+                <div class="shotdropdown"><img src="img/downarrow1.png" alt="" class="shotdropdown-img"></div>
+              </div>
+              <div class="search-icon">
+                <img src="img/searchicon.png" alt="" class="shotdropdown-img">
+              </div>
+            </div>
+            <div class="dropdown-explore">
+                <div class="explore">
+                    <div class="explore-content">
+                        <p>Explore</p>
+                        <div class="explore-icon">
+                            <img src="img/downarrow1.png" alt="Down Arrow">
+                        </div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <div class="explore-dd">
+                          
+                            <div class="pop-style" id="pop-font">
+                                <div class="pop-img"><img src="img/popular.png" alt=""></div>
+                                <div class="popular-name"><a href="#">Popular</a></div>
+                            </div>
+                            <div class="pop-style"  id="new-font"> 
+                                <div class="pop-img"><img src="img/newandnewworthy.png" alt=""></div>
+                                <div class="popular-name"><a href="#">New and Noteworthy</a></div>
+                            </div>
+                           
+                            <div class="pop-style"><a href="#" data-teamname="Product Design" id="pd"><p>Product Design</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Web Design" class="anchor" id="pd"><p>Web Design</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Animation" id="pd"><p>Animation</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Branding" id="pd"><p>Branding</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Illustration" id="pd"><p>Illustration</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Mobile" id="pd"><p>Mobile</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Typography" id="pd"><p>Typography</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Print" id="pd"><p>Print</p></a></div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="explore">
+                    <div class="explore-content"><p>Hire a Designer</p></div>
+                    <div class="explore-icon"><img src="img/downarrow1.png" alt=""></div>
+                    <div class="dropdown-menu">
+                        <div class="explore-dd">
+                            <div class="pop-style" id="pop-font">
+                                <div class="pop-img"><img src="img/hiresearch.png" alt=""></div>
+                                <div class="popular-name"><a href="#">Browse Designers</a></div>
+                            </div>
+                            <div class="pop-style"  id="new-font"> 
+                                <div class="pop-img"><img src="img/submitabrief.png" alt=""></div>
+                                <div class="popular-name"><a href="#">Submit a Project Brief</a></div>
+                            </div>
+                            <div class="pop-style"  id="new-font"> 
+                                <div class="pop-img"><img src="img/postjob.png" alt=""></div>
+                                <div class="popular-name"><a href="#">Post a Job</a></div>
+                            </div>
+                            <div class="pop-style"  id="new-font"> 
+                                <div class="pop-img"><img src="img/hiringdribble.png" alt=""></div>
+                                <div class="popular-name"><a href="#">Hiring on Dribble</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="explore">
+                    <div class="explore-content"><p>Find Jobs</p></div>
+                    
+                </div>
+                <div class="explore">
+                    <div class="explore-content"><p>Blog</p></div>
+                    
+                </div>
+            </div>
+            <div class="login-side">
+                
+                <div class="signup"><p>Sign up</p></div>
+                <div class="login"><p>Log in</p></div>
+            </div>
+        </div>
+        <div class="search-bar-none">
+            <div class="search-none"> 
+                <input type="text" placeholder="What are you looking for?" class="search-input-none" id="search-bar">
+            </div>
+            <div class="shots-none">
+                <div class="shot-name"><p>Shots</p></div>
+                <div class="shotdropdown"><img src="img/downarrow1.png" alt="" class="shotdropdown-img"></div>
+              </div>
+              <div class="search-icon">
+                <img src="img/searchicon.png" alt="" class="shotdropdown-img">
+              </div>
+        </div>
+        <div class="dashboard">
+           <div class="dashboard-contents">
+            <div class="name"><h3>Dashboard</h3></div>
+            <div class="content"><p>Dashboards, admin panels & analytics design inspiration. Dashboards help organize, store, and <span id="next-line">display important information from multiple data sources into one, easy-to-access place.</span></p>
+            </div>
+            <div class="related">
+                <div class="chart" id="related">Related:</div>
+                <div class="chart">chart</div>
+                <div class="chart">admin</div>
+                <div class="chart">graph</div>
+                <div class="chart">analytics</div>
+                <div class="chart">data</div>
+                <div class="chart">stats</div>
+            </div>
+           </div>
+            <div class="filter-nav">
+                <div class="popular-btn">
+                    <div class="pop-name">
+                        <h3 id="popular-btn">Popular</h3>
+                    </div>
+                    <div class="popular-img">
+                        <img src="img/downarrow1.png" alt="downarrow">
+                    </div>
+                    <div class="dropdown-btn" id="dropdown-btn">
+                        <div class="dropdown-item"><button onclick="displaySavedCards()" class="fav-item-btn">Saved Cards</button></div>
+                        <div class="dropdown-item"><button onclick="displayFavoriteCards()" class="fav-item-btn">Favorite Cards</button></div>
+                        
+                        
+
+                    </div>
+                </div>
+                
+                <div class="discover-field">
+                    
+
+                    <div class="pop-style"><a href="#" data-teamname="Product Design"><p>Product Design</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Web Design" class="anchor"><p>Web Design</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Animation"><p>Animation</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Branding"><p>Branding</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Illustration"><p>Illustration</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Mobile"><p>Mobile</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Typography"><p>Typography</p></a></div>
+                                <div class="pop-style"><a href="#" data-teamname="Print"><p>Print</p></a></div>
+
+                </div>
+                <div class="filter">
+                    <div class="popular-img"><img src="img/filters.png" alt="downarrow"></div>
+                    <div class="pop-name" id="filter-name"><h3>Filter</h3></div>
+                   
+                </div>
+            </div>
+           <div class="cards" id="card">
+            <!-- <div class="cardnumbers" id="cardnumbers">
+                <div class="card-image">
+                    <div class="add">
+                        <div class="name-add"><p>Product</p></div>
+                        <div class="add-cart">
+                            <div class="add-hoverfav"><img src="img/sveimage.png" alt="" class="add-hoverfav-img"></div>
+                            <div class="add-hoverlike"><img src="img/free-heart-icon-3510-thumb.png" alt="" class="add-hoverlike-img"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon1.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading"><p>Dipa Inhouse</p></div>
+                        <div class="team">
+                            <div class="team-name"><p>TEAM</p></div>
+                        </div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt="" class="heart-img"></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt="" class="view-img"></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg2.png" alt="" class="cardiconimg"></div>
+                <div class="img-hover">
+                    <div class="name-hover">name</div>
+                    <div class="hover-img">
+                        <div class="hoverheart">heart</div>
+                        <div class="cartimg">cardimg</div>
+                    </div>
+
+                </div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon2.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading"><p>Nixtio</p></div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg3.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon3.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">HALO LAB</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg4.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon4.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Bato</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg5.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon1.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Dipa Inhouse</div>
+                        <div class="team"><img src="img/team.png" alt=""></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg6.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon6.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">QClay</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg7.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon3.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">HALO LAB</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg8.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon7.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Fireart Studio</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg9.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon8.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Paperpillar TEAM</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg10.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon1.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Dipa Inhouse</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg11.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon10.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Bonsai</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg12.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon11.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Upnow Studio</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg13.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon12.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Andrew Mialszygrosz</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg14.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon13.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">One Week Wonders</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg15.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon15.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">DStudio®</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg16.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon1.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Dipa Inhouse</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg17.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon15.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">One Week Wonders TLAM</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg18.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon16.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Omer Erdogan PRO</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg19.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon12.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Bonsai</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg20.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon11.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">HALO LAB</div>
+                        <div class="team"><img src="img/team.png" alt=""></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg21.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon12.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Bonsai</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg22.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon2.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">U18</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg11.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon16.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Caraka</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardnumbers">
+                <div class="card-image"><img src="img/cardiconimg15.png" alt="" class="cardiconimg"></div>
+                <div class="card-details">
+                    <div class="cardname">
+                        <div class="cardname-img"><img src="img/cardicon8.png" alt="" class="cardicon"></div>
+                        <div class="cardname-heading">Zajno</div>
+                        <div class="team"><div class="team-name"><p>TEAM</p></div></div>
+                    </div>
+                    <div class="cardlikes">
+                        <div class="nolikes">
+                            <div class="heart-img"><img src="img/heart.png" alt=""></div>
+                            <div class="likes"><p>573</p></div>
+                        </div>
+                        <div class="views">
+                            <div class="view-img"><img src="img/eye.png" alt=""></div>
+                            <div class="noviews"><p>253k</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+           
+
+           </div>
+           <div class="signup-down">
+            <div class="signup-btn"><button class="signup-btn-pri">Sign-up to continue</button></div>
+           </div>
+           <div class="slider" id="slider" >
+           
+                <!-- <div class="slider-card"> -->
+                    <!-- <div class="animation">slider cards</div>
+                    <div class="animation-name">namr</div> -->
+                <!-- </div> -->
+                <!-- <div class="slider-card">
+                    <div class="animation">
+                        <img src="img/slide1.png" alt="">
+                    </div>
+                    <div class="animation-name"><p>Typography</p></div>
+                </div>
+                <div class="slider-card">
+                    <div class="animation"><img src="img/slide2.png" alt=""></div>
+                    <div class="animation-name"><p>Branding</p></div>
+                </div>
+                <div class="slider-card">
+                    <div class="animation">
+                        <img src="img/slide3.png" alt="">
+                    </div>
+                    <div class="animation-name"><p>Animation</p></div>
+                </div>
+                <div class="slider-card">
+                    <div class="animation">
+                        <img src="img/slide4.png" alt="">
+                    </div>
+                    <div class="animation-name"><p>Illustration</p></div>
+                </div>
+                <div class="slider-card">
+                    <div class="animation">
+                        <img src="img/slide5.png" alt="">
+                    </div>
+                    <div class="animation-name"><p>Product Design</p></div>
+                </div>
+                <div class="slider-card">
+                    <div class="animation">
+                        <img src="img/slide6.png" alt="">
+                    </div>
+                    <div class="animation-name"><p>Web Design</p></div>
+                </div> -->
+                 
+
+
+           </div>
+           <div class="footer">
+            <div class="footer-things">
+                <div class="footer-content">
+                    <div class="more-deatils">
+                        <div class="dribblename"><a href="#"><img src="img/dribble.png" alt=""></a></div>
+                        <div class="support">
+                            <div class="design"><p>For designers</p></div>
+                            <div class="design"><p>Hire talent</p></div>
+                            <div class="design"><p>Inspiration</p></div>
+                            <div class="design"><p>Advertising</p></div>
+                            <div class="design"><p>Blog</p></div>
+                            <div class="design"><p>About</p></div>
+                            <div class="design"><p>Careers</p></div>
+                            <div class="design"><p>Support</p></div>
+                        </div>
+                        <div class="contactus">
+                            <div class="insta">
+                                <a href="https://www.tweeter.com" target="_blank"><img src="img/tweet.png" alt=""></a>
+                            </div>
+                            <div class="insta"><a href="https://www.facebook.com" target="_blank"><img src="img/fbicon.png" alt=""></a></div>
+                            <div class="insta"><a href="https://www.instagram.com" target="_blank"><img src="img/instaicon.png" alt=""></a></div>
+                            <div class="insta"><a href="https://www.pinerest.com" target="_blank"><img src="img/pine.png" alt=""></a></div>
+                        </div>
+                    </div>
+                    <div class="copy-rights">
+                        <div class="contidions">
+                            <div class="year">&copy; 2024 Dribble</div>
+                            <div class="terms">
+                                <div><p>Terms</p></div>
+                                <div><p>Privacy</p></div>
+                                <div><p>Cookies</p></div>
+                            </div>
+                        </div>
+                        <div class="more">
+                            <div class="tags">Jobs</div>
+                            <div class="tags">Designers</div>
+                            <div class="tags">Freelancers</div>
+                            <div class="tags">Tags</div>
+                            <div class="tags">Places</div>
+                            <div class="tags">Resources</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
