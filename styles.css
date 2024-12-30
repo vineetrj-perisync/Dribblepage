@@ -35,7 +35,7 @@
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     width: 100%;
     padding: 18px 20px;
     align-items: center;
@@ -61,14 +61,14 @@ justify-content: center;
    padding: 5px;
    background-color: whitesmoke;
 }
-/* .search-bar:hover{
+.search-bar:hover{
     box-shadow: 5px 5px  3px whitesmoke;
-    border: 1.5px solid rgb(235, 232, 232);
-} */
-/* input:hover{
-    border: 2px solid rgb(247, 242, 242);
     background-color: white;
-} */
+}
+input:hover{
+   
+    background-color: white;
+} 
 
 .shotdropdown-img{
     mix-blend-mode:darken;
@@ -141,11 +141,11 @@ border-radius: 25px;
 
 
 .search-bar-none {
-    display: none; 
+    display: none; /* Default: hidden on larger screens */
     position: fixed; 
-    top: 68px; 
-    width: 90%; 
-    margin: 0 auto; 
+    top: 68px; /* Adjust based on the navbar height */
+    width: 90%; /* Takes up most of the screen width */
+    margin: 0 auto; /* Center the search bar horizontally */
     left: 0;
     right: 0;
     align-items: center;
@@ -154,19 +154,19 @@ border-radius: 25px;
     background-color: whitesmoke;
     justify-content: center;
     border-radius: 25px;
-    z-index: 999; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 999; /* Ensure it appears above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
 .search-bar-none{
     display: none;
 }
-
+/* Shots styling */
 .shots-none {
     display: flex;
     align-items: center;
 }
 
-
+/* Search input styling */
 .search-input-none {
     background-color: whitesmoke;
     border: none;
@@ -176,7 +176,7 @@ border-radius: 25px;
     outline: none;
 }
 
-
+/* Show search bar on smaller screens (iPhone SE, XR) */
 @media (max-width: 414px) {
     /* .search-bar-none {
         display: flex;
@@ -186,10 +186,10 @@ border-radius: 25px;
     } */
 }
 
-
+/* Adjustments for ultra-small screens */
 @media (max-width: 320px) {
     .search-input-none {
-        padding-right: 100px; 
+        padding-right: 100px; /* Reduce width for smaller inputs */
     }
 }
 
@@ -212,7 +212,7 @@ border-radius: 25px;
 
 .explore-content p{
    font-size: 14px;
-   font-weight: 550;
+   font-weight: 700;
    line-height: 30px;
 
 }
@@ -388,13 +388,13 @@ color:rgb(123, 113, 148);
     /* color: #333; */
       background-color: white;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+    /* transition: background-color 0.2s ease-in-out; */
 }
 
-.dropdown-item:hover {
+/* .dropdown-item:hover {
     background-color: #f0f0f0;
     border-radius: 10px;
-}
+} */
 
 .discover-field{
     display: flex;
@@ -422,11 +422,15 @@ color:rgb(123, 113, 148);
 }
 .pop-style:hover{
     
-    border: 1px solid rgb(189, 188, 188);
-   background-color: whitesmoke;
-   border: none;
-    padding: 9px 13px;
-    border-radius: 18px;
+   
+   color:   rgb(189, 188, 188);
+   
+   
+}
+#pop-hoveri:hover{
+    background-color: whitesmoke;
+    border-radius: 25px;
+    color: rgb(131, 131, 131);
 }
 .filter{
     border: 0.5px solid rgb(222, 220, 220);
@@ -534,11 +538,13 @@ color:rgb(123, 113, 148);
 
 .add-hoverfav-img,.add-hoverlike-img{
 width: 20px;
+height: 18px;
 mix-blend-mode: darken;
+border-radius: 50%;
 }
 .add-hoverfav,.add-hoverlike{
     cursor: pointer;
-    padding: 12px;
+    padding: 10px;
     border-radius: 50%;
     border: none;
     background-color: white;
@@ -618,8 +624,12 @@ line-height: 16px;
 color: rgb(61, 61, 78);
 }
 .heart-img{
-    
+    border-radius: 50%;
+}
+.heart-img-icon{
+    border-radius: 50%;
     width: 17px;
+
   
 }
 .heart-img:hover{
@@ -836,15 +846,16 @@ justify-content: space-between;
 .dropdown-menu {
     display: none; 
     position: absolute;
-   top: 100%; 
+   top: 160%; 
     left: 0;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     /* padding: 10px 0; */
-    z-index: 2000;
+    z-index: 10000;
     width: 220px;
     border-radius: 10px;
+  
 }
 
 
@@ -870,7 +881,7 @@ justify-content: space-between;
 .pop-style{
     padding: 10px;
     color: black;
-    /* font-weight: 600; */
+    font-weight: 600;
 }
 .explore-dd{
     display: flex;
@@ -888,7 +899,7 @@ justify-content: space-between;
     display: flex;
     align-items: center;
     gap: 10px;
-font-weight: 600;
+font-weight: 700;
 }
 
 
@@ -903,25 +914,25 @@ font-weight: 600;
 
 @keyframes scroll {
     0% {
-      transform: translateX(0);
+      transform: translateX(0); 
     }
     100% {
       transform: translateX(-100%); 
     }
   }
   
-  
+
   .slider-container {
    
     width: 100%;
-   
+    
     overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
   }
   
- 
+
   .slider {
     cursor: pointer;
     margin-top: 70px;
@@ -931,7 +942,7 @@ font-weight: 600;
     will-change: transform;
   }
   
-
+ 
   .slider-card {
     cursor: pointer;
     width: 200px;
@@ -961,12 +972,12 @@ font-weight: 600;
     padding-left: 10px;
   }
   
-
+  
   .slider:hover {
     animation-play-state: paused;
   }
   
-  
+ 
   @media (max-width: 1040px) {
     .slider {
       gap: 55px; 
@@ -990,7 +1001,7 @@ font-weight: 600;
         padding: 30px 20px; 
       }
       .slider-card {
-        width: 150px;
+        width: 150px; 
         height: 90px; 
       }
       .anima-img {
@@ -1280,12 +1291,12 @@ font-weight: 600;
         height: 200px;
     }
     .slider {
-       
-        padding: 30px 20px; 
+        /* Further reduce gap for smaller screens */
+        padding: 30px 20px; /* Reduce padding */
       }
       .slider-card {
-        width: 150px; 
-        height: 0px; 
+        width: 150px; /* Reduce card width */
+        height: 0px; /* Reduce card height */
       }
       
 }
@@ -1378,7 +1389,7 @@ font-weight: 600;
     flex-direction: row;
     position: relative;
     align-items: center;
-   
+    /* display: inline-block; */
 }
 
 .explore-content {
@@ -1509,7 +1520,7 @@ header {
   @media (max-width: 414px) {
     .slider {
       /* gap: 10px;  */
-      padding: 30px 20px; 
+      padding: 30px 20px; /* Reduce padding */
     }
     /* .slider-card {
       width: 150px;
