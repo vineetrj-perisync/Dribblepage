@@ -2,7 +2,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const cardId = urlParams.get('id');
 
-// Fetch the card data using the ID (you could use AJAX or a simple array lookup)
+
 const cards = [
     {
         "id":1,
