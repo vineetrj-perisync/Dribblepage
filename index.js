@@ -276,7 +276,7 @@ const displayCards = (filteredCards) => {
     filteredCards.forEach((element) => {
         const value = `
             <div class="cardnumbers">
-                <div class="card-image" style="background-image: url(${element.cardimage})">
+                <div class="card-image" style="background-image: url(${element.cardimage})"><a href="card-details.html?id=${element.id}" class="card-image" style="background-image: url(${element.cardimage})"></a>
                     <div class="add">
                         <div class="name-add">
                             <p>
