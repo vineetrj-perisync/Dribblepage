@@ -141,11 +141,11 @@ border-radius: 25px;
 
 
 .search-bar-none {
-    display: none; /* Default: hidden on larger screens */
+    display: none; 
     position: fixed; 
-    top: 68px; /* Adjust based on the navbar height */
-    width: 90%; /* Takes up most of the screen width */
-    margin: 0 auto; /* Center the search bar horizontally */
+    top: 68px; 
+    width: 90%; 
+    margin: 0 auto; 
     left: 0;
     right: 0;
     align-items: center;
@@ -154,19 +154,19 @@ border-radius: 25px;
     background-color: whitesmoke;
     justify-content: center;
     border-radius: 25px;
-    z-index: 999; /* Ensure it appears above other elements */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    z-index: 999; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 .search-bar-none{
     display: none;
 }
-/* Shots styling */
+
 .shots-none {
     display: flex;
     align-items: center;
 }
 
-/* Search input styling */
+
 .search-input-none {
     background-color: whitesmoke;
     border: none;
@@ -176,7 +176,7 @@ border-radius: 25px;
     outline: none;
 }
 
-/* Show search bar on smaller screens (iPhone SE, XR) */
+
 @media (max-width: 414px) {
     /* .search-bar-none {
         display: flex;
@@ -186,10 +186,10 @@ border-radius: 25px;
     } */
 }
 
-/* Adjustments for ultra-small screens */
+
 @media (max-width: 320px) {
     .search-input-none {
-        padding-right: 100px; /* Reduce width for smaller inputs */
+        padding-right: 100px; 
     }
 }
 
@@ -900,28 +900,28 @@ font-weight: 600;
 
 
 
-/* Keyframe for sliding animation */
+
 @keyframes scroll {
     0% {
-      transform: translateX(0); /* Start position */
+      transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%); /* Slide out completely */
+      transform: translateX(-100%); 
     }
   }
   
-  /* Container that holds the slider */
+  
   .slider-container {
    
     width: 100%;
-    /* height: 150px; Fixed height for the slider */
+   
     overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
   }
   
-  /* The actual slider that moves */
+ 
   .slider {
     cursor: pointer;
     margin-top: 70px;
@@ -931,7 +931,7 @@ font-weight: 600;
     will-change: transform;
   }
   
-  /* Individual slider card */
+
   .slider-card {
     cursor: pointer;
     width: 200px;
@@ -953,7 +953,7 @@ font-weight: 600;
     border-radius: 10px;
   }
   
-  /* Hover effect to scale up the card */
+  
   .slider-card {
     transform: scale(1.1);
   }
@@ -961,37 +961,37 @@ font-weight: 600;
     padding-left: 10px;
   }
   
-  /* Pause animation on hover */
+
   .slider:hover {
     animation-play-state: paused;
   }
   
-  /* Responsive media queries */
+  
   @media (max-width: 1040px) {
     .slider {
-      gap: 55px; /* Reduce gap for smaller screens */
+      gap: 55px; 
     }
   }
   
   @media (max-width: 743px) {
     .slider-card {
-      flex: 0 0 150px; /* Adjust card size for smaller screens */
+      flex: 0 0 150px; 
       font-size: 14px;
     }
   }
   @media (max-width: 414px) {
     .slider {
-      gap: 0px; /* Further reduce gap for smaller screens */
-      padding: 30px 20px; /* Reduce padding */
+      gap: 0px; 
+      padding: 30px 20px; 
     }
   
     .slider {
-        gap: 10px; /* Further reduce gap for smaller screens */
-        padding: 30px 20px; /* Reduce padding */
+        gap: 10px; 
+        padding: 30px 20px; 
       }
       .slider-card {
-        width: 150px; /* Reduce card width */
-        height: 90px; /* Reduce card height */
+        width: 150px;
+        height: 90px; 
       }
       .anima-img {
         width: 150px;
@@ -1280,12 +1280,12 @@ font-weight: 600;
         height: 200px;
     }
     .slider {
-        /* Further reduce gap for smaller screens */
-        padding: 30px 20px; /* Reduce padding */
+       
+        padding: 30px 20px; 
       }
       .slider-card {
-        width: 150px; /* Reduce card width */
-        height: 0px; /* Reduce card height */
+        width: 150px; 
+        height: 0px; 
       }
       
 }
@@ -1378,7 +1378,7 @@ font-weight: 600;
     flex-direction: row;
     position: relative;
     align-items: center;
-    /* display: inline-block; */
+   
 }
 
 .explore-content {
@@ -1509,7 +1509,7 @@ header {
   @media (max-width: 414px) {
     .slider {
       /* gap: 10px;  */
-      padding: 30px 20px; /* Reduce padding */
+      padding: 30px 20px; 
     }
     /* .slider-card {
       width: 150px;
